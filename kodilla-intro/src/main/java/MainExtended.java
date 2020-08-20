@@ -15,5 +15,6 @@ public class MainExtended {
         System.out.println("Pierwsza litera imienia to: " + firstLetterName);
 
 
+
     }
 }
