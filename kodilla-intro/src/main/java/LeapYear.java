@@ -5,7 +5,6 @@ public class LeapYear {
 
         System.out.println("Reszta z dzielenia wynosi: " + year % 4);
 
-
         if (leapYear(year) == 0) {
             System.out.println("Rok jest przestępny");
         } else {
@@ -14,7 +13,6 @@ public class LeapYear {
         }
 
     }
-
 
     private static int leapYear(int a) {
        int result = a % 4;
