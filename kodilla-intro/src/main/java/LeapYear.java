@@ -9,9 +9,7 @@ public class LeapYear {
             System.out.println("Rok nie jest przestępny");
         }
     }
-
     private static boolean leapYear(int a) {
-
         return ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0);
     }
 }
