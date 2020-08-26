@@ -11,6 +11,7 @@ public class DebugExample {
         } else {
             sumAndDisplay(firstNumber, secondNumber);
         }
+
     }
 
     private static void sumAndDisplay(int a, int b) {
