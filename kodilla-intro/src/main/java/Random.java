@@ -1,4 +1,4 @@
-public class Random {
+/*public class Random {
 
 
     public int getCountOfRandomNumber(int max) {
@@ -13,4 +13,4 @@ public class Random {
         return result;
         System.out.println(getCountOfRandomNumber(19));
     }
-}
+}*/
