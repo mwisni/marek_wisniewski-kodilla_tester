@@ -4,18 +4,18 @@ public class Person {
 
     String firstName;
     int age;
-    String job;
+    Job job;
 
 
-    public Person(String firstName, int age, String job) {
+    public Person(String firstName, int age, Job job) {
         this.firstName = firstName;
         this.age = age;
         this.job = job;
     }
 
-    public String personResponsibilities(String firstName, String responsibilities){
+    public String personResponsibilities(){
 
-        return firstName + responsibilities;
+        return this.firstName + this.job.getResponsibilities();
     }
 
 }

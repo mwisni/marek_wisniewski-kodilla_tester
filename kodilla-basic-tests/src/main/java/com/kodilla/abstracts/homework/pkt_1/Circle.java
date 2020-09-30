@@ -6,6 +6,7 @@ public class Circle extends Shape {
 
 
     public Circle(double r){
+
         this.r = (int) r;
     }
 
