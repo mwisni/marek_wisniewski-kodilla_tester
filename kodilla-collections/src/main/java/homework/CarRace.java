@@ -4,16 +4,22 @@ public class CarRace {
 
     public static void main(String[] args) {
 
-        Ford ford = new Ford(80, 15,10);
+        Ford ford = new Ford();
         doRace(ford);
-        Opel opel = new Opel(90, 30, 25);
+        System.out.println("Ford speed is: " + ford.getSpeed());
+        Opel opel = new Opel();
         doRace(opel);
-        Skoda skoda = new Skoda(100, 40, 30);
+        System.out.println("Opel speed is: " + opel.getSpeed());
+        Skoda skoda = new Skoda();
         doRace(skoda);
+        System.out.println("Skoda speed is: " + skoda.getSpeed());
     }
-// Tutaj powinna być 3 razy wywołana metoda increaseSpeed i 2 razy decreaseSpeed
+
     private static void doRace (Car car){
         car.increaseSpeed();
+        car.increaseSpeed();
+        car.increaseSpeed();
+        car.decreaseSpeed();
         car.decreaseSpeed();
     }
 

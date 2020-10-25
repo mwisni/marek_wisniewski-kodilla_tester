@@ -3,15 +3,11 @@ package homework;
 public class Ford implements Car{
 
 
-    private int speed;
-    private int increaseSpeed;
-    private int decreaseSpeed;
+    private int speed = 0;
+    private int increaseSpeed = 15;
+    private int decreaseSpeed = 10;
 
-    public Ford (int speed, int increaseSpeed, int decreaseSpeed){
-        this.speed = speed;
-        this.increaseSpeed = increaseSpeed;
-        this.decreaseSpeed = decreaseSpeed;
-    }
+
 
     @Override
     public int getSpeed() {
@@ -20,12 +16,14 @@ public class Ford implements Car{
 
     @Override
     public void increaseSpeed() {
-        System.out.println(speed + increaseSpeed);
+        speed += increaseSpeed;
+
     }
 
     @Override
     public void decreaseSpeed() {
-        System.out.println(speed - decreaseSpeed);
+        speed -= decreaseSpeed;
+
 
     }
 }
