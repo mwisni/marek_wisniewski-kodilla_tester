@@ -7,11 +7,15 @@ public class Ford implements Car{
     private int increaseSpeed = 15;
     private int decreaseSpeed = 10;
 
+    public Ford(int increaseSpeed, int speed) {
+        this.increaseSpeed = increaseSpeed;
+        this.speed = speed;
+    }
 
 
     @Override
     public int getSpeed() {
-        return speed;
+        return speed += increaseSpeed;
     }
 
     @Override
