@@ -22,7 +22,6 @@ public class CarsListApplication {
         cars.remove(ford);
         System.out.println(cars.size());
         for (Car car : cars) {
-            // nie mogę dodać metody describeCar z CarUtils, dlatego metoda getSpeed jako zamiennik.
             CarUtils.describeCar(car);
 
         }
