@@ -1,8 +1,6 @@
 package com.kodilla.collections.adv.immutable.special.homework;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 public class BookApplication {
@@ -11,23 +9,15 @@ public class BookApplication {
 
         Set<Book> books = new HashSet<>();
 
-        BookManager book =  new BookManager("Lśnienie", "Stephen King");
-        BookManager book1 = new BookManager("Lśnienie", "Stephen King");
-        BookManager book2 = new BookManager("Lśnienie", "Stephen");
-        BookManager book3 =  new BookManager("Lśnienie", "Stephen King");
-        BookManager book4 = new BookManager("Lśnienie", "Stephen King");
-        BookManager book5 = new BookManager("Lśnienie", "Stephen");
+        BookManager book =  new BookManager();
+        BookManager book1 = new BookManager();
+        BookManager book2 = new BookManager();
 
-        books.add(book);
-        books.add(book1);
-        books.add(book2);
-        books.add(book3);
-        books.add(book4);
-        books.add(book5);
+        books.add(book.createBook("Lśnienie", "Stephen King"));
+        books.add(book1.createBook("Lśnienie", "Stephen King"));
+        books.add(book2.createBook("Lśnienie", "Stephen"));
 
-        // zwracany false
         System.out.println(book == book1);
-        // zwracany true
         System.out.println(book.equals(book1));
         System.out.println(books.size());
 
