@@ -1,5 +1,7 @@
 package com.kodilla.collections.adv.immutable.special.homework;
 
+import com.sun.tools.classfile.Opcode;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -7,24 +9,21 @@ public class BookApplication {
 
     public static void main(String[] args) {
 
-        Set<Book> books = new HashSet<>();
 
-        BookManager book =  new BookManager();
-        BookManager book1 = new BookManager();
-        BookManager book2 = new BookManager();
+        BookManager bookManager =  new BookManager();
 
-        books.add(book.createBook("Lśnienie", "Stephen King"));
-        books.add(book1.createBook("Lśnienie", "Stephen King"));
-        books.add(book2.createBook("Lśnienie", "Stephen"));
+        Book book1 = bookManager.createBook("Lśnienie", "Stephen King");
+        Book book2 = bookManager.createBook("Lśnienie", "Stephen King");
+        Book book3 = bookManager.createBook("Dziewczyny które zabiły Cloe", "Alex Marwood");
 
-        System.out.println(book == book1);
-        System.out.println(book.equals(book1));
-        System.out.println(books.size());
+        // porównanie...
+        System.out.println(book1.equals(book2));
+        System.out.println(book1 == book3);
+        System.out.println(bookManager.bookSet.size());
 
-        for (Book bookList: books) {
-            System.out.println(bookList);
+        for (Book bookSet : bookManager.bookSet) {
+            System.out.println(bookSet);
         }
-
 
     }
 }
