@@ -24,7 +24,7 @@ public class Application {
         }else
             System.out.println("Metoda Subtract nie działa poprawnie da liczb " + b + " i " + a);
 
-        int increaseResult = calculator.increase(a);
+        int increaseResult = calculator.toSecondPower(a);
 
         boolean correctIncrease = ResultChecker.assertEquals(25, increaseResult);
         if (correctIncrease){

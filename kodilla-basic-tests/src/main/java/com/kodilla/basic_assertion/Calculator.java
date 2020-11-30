@@ -16,7 +16,7 @@ public class Calculator {
         return result;
     }
 
-    public int increase (int a){
+    public int toSecondPower(int a){
 
         int result = a * a;
         return result;

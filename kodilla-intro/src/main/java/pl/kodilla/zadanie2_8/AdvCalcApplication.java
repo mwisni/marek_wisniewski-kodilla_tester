@@ -1,0 +1,12 @@
+package pl.kodilla.zadanie2_8;
+
+public class AdvCalcApplication {
+
+    public static void main(String[] args) {
+        AdvCalculator calculator = new AdvCalculator();
+        double result = calculator.calculate();
+        System.out.println("Result: " + result);
+
+    }
+
+}
