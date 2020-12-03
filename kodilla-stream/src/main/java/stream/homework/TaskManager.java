@@ -7,9 +7,9 @@ public class TaskManager {
                 TaskRepository.getTasks()
                         .stream()
                         .filter(task -> task.getDeadline().isAfter(LocalDate.now()))
-                        .map(Task::getDeadline)
+                        .map(Task -> Task.getDeadline())
                         .forEach(System.out::println);
 
-            }
 
+            }
 }
