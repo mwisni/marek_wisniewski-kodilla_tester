@@ -1,21 +1,15 @@
 package stream.homework;
 
+import java.time.LocalDate;
+
 public class TaskManager {
+            public static void main(String[] args) {
+                TaskRepository.getTasks()
+                        .stream()
+                        .filter(task -> task.getDeadline().isAfter(LocalDate.now()))
+                        .map(Task::getDeadline)
+                        .forEach(System.out::println);
 
-    public static void main(String[] args) {
-        TaskRepository.getTasks()
-                .stream()
-                .filter(task -> task.getOpened().isBefore(TaskRepository.deadlineDate()))
-                .map(TaskManager::getName)
-                .forEach(tn -> System.out.println(tn));
-
-        System.out.println(TaskRepository.dateNow());
-        System.out.println(TaskRepository.deadlineDate());
-
-    }
-
-    public static String getName (Task task){
-        return task.getName();
-    }
+            }
 
 }
